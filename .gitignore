@@ -1,0 +1,14 @@
+# Variables de entorno y secretos (claves de API, credenciales)
+.env
+.env.local
+*.key
+*.pem
+
+# Archivos generados de prueba / descargas locales
+asistentes_evento.txt
+
+# Archivos de configuración de editores y SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

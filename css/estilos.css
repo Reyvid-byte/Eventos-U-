@@ -1,0 +1,730 @@
+/* ==========================================================================
+   EventosU - Hoja de estilos global
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Variables (paleta universitaria)
+   Pantone 306 C ≈ #00B3E3 (azul cian)  |  Pantone 302 C ≈ #003B5C (azul marino)
+   -------------------------------------------------------------------------- */
+:root {
+    /* Primario: Pantone 302 C */
+    --color-primario: #003b5c;
+    --color-primario-oscuro: #002a42;
+    --color-primario-claro: #1f5a7d;
+
+    /* Secundario / acento: Pantone 306 C */
+    --color-acento: #00b3e3;
+    --color-acento-oscuro: #0092ba;
+    --color-acento-claro: #66d4f1;
+    --color-acento-suave: #e5f7fc;
+
+    /* Neutros */
+    --color-blanco: #ffffff;
+    --color-gris-50: #f8f9fa;
+    --color-gris-100: #f1f3f5;
+    --color-gris-300: #dee2e6;
+    --color-gris-500: #adb5bd;
+    --color-gris-700: #495057;
+    --color-gris-900: #212529;
+    --color-negro: #0b0c0e;
+
+    /* Tipografía */
+    --fuente-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --texto-base: var(--color-gris-900);
+    --texto-suave: var(--color-gris-700);
+
+    /* Medidas y efectos */
+    --radio: 0.5rem;
+    --radio-card: 1rem;
+    --radio-pill: 50rem;
+    --sombra-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --sombra-md: 0 4px 14px rgba(0, 59, 92, 0.15);
+    --sombra-card: 0 2px 10px rgba(0, 59, 92, 0.08);
+    --sombra-card-hover: 0 10px 24px rgba(0, 59, 92, 0.14);
+    --transicion: all 0.2s ease-in-out;
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset básico
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-base);
+    color: var(--texto-base);
+    background-color: var(--color-gris-50);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+a:hover {
+    color: var(--color-acento-oscuro);
+}
+
+/* --------------------------------------------------------------------------
+   3. Header / Navbar
+   -------------------------------------------------------------------------- */
+.header-principal {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    box-shadow: var(--sombra-md);
+}
+
+.navbar-eventosu {
+    background-color: var(--color-primario);
+    border-bottom: 3px solid var(--color-acento);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.navbar-eventosu .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: var(--color-blanco);
+    letter-spacing: 0.5px;
+}
+
+.navbar-eventosu .navbar-brand span {
+    color: var(--color-acento);
+}
+
+.navbar-eventosu .navbar-brand:hover {
+    color: var(--color-blanco);
+}
+
+.navbar-eventosu .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radio);
+    transition: var(--transicion);
+}
+
+.navbar-eventosu .nav-link svg {
+    flex-shrink: 0;
+}
+
+.navbar-eventosu .nav-link:hover,
+.navbar-eventosu .nav-link:focus {
+    color: var(--color-blanco);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-eventosu .nav-link.active {
+    color: var(--color-primario);
+    background-color: var(--color-acento);
+}
+
+.navbar-eventosu .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-eventosu .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 179, 227, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   4. Botones
+   -------------------------------------------------------------------------- */
+.btn {
+    border-radius: var(--radio);
+    font-weight: 600;
+    padding: 0.55rem 1.25rem;
+    transition: var(--transicion);
+}
+
+.btn-primario {
+    background-color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.btn-primario:hover,
+.btn-primario:focus {
+    background-color: var(--color-primario-oscuro);
+    border-color: var(--color-primario-oscuro);
+    color: var(--color-blanco);
+}
+
+.btn-acento {
+    background-color: var(--color-acento);
+    border: 2px solid var(--color-acento);
+    color: var(--color-primario);
+}
+
+.btn-acento:hover,
+.btn-acento:focus {
+    background-color: var(--color-acento-oscuro);
+    border-color: var(--color-acento-oscuro);
+    color: var(--color-blanco);
+}
+
+.btn-contorno {
+    background-color: transparent;
+    border: 2px solid var(--color-primario);
+    color: var(--color-primario);
+}
+
+.btn-contorno:hover,
+.btn-contorno:focus {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.btn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(0, 179, 227, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   5. Formularios
+   -------------------------------------------------------------------------- */
+.form-label {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--texto-suave);
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+    border-color: var(--color-gris-300);
+    border-radius: var(--radio);
+}
+
+.input-group-text {
+    background-color: var(--color-gris-100);
+    color: var(--color-gris-700);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 0.2rem rgba(0, 179, 227, 0.25);
+}
+
+/* --------------------------------------------------------------------------
+   6. Página principal: encabezado y filtros
+   -------------------------------------------------------------------------- */
+.encabezado-pagina {
+    padding: 2rem 1.5rem;
+    border-radius: var(--radio-card);
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-primario-claro) 100%);
+    color: var(--color-blanco);
+    box-shadow: var(--sombra-md);
+}
+
+.encabezado-titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+}
+
+.encabezado-subtitulo {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.panel-filtros {
+    background-color: var(--color-blanco);
+    padding: 1.25rem;
+    border-radius: var(--radio-card);
+    box-shadow: var(--sombra-card);
+}
+
+/* --------------------------------------------------------------------------
+   7. Cards de eventos
+   -------------------------------------------------------------------------- */
+.card-evento {
+    border: none;
+    border-radius: var(--radio-card);
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra-card);
+    border-top: 4px solid var(--color-acento);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-evento:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-card-hover);
+}
+
+.card-evento .card-body {
+    padding: 1.35rem;
+}
+
+/* Color de acento según el tipo de evento */
+.card-evento[data-tipo="Conferencia"] { --color-tipo: var(--color-acento); }
+.card-evento[data-tipo="Taller"]      { --color-tipo: #2fa36b; }
+.card-evento[data-tipo="Curso"]       { --color-tipo: #7b5ea7; }
+.card-evento[data-tipo="Congreso"]    { --color-tipo: var(--color-primario); }
+
+.card-evento[data-tipo] {
+    border-top-color: var(--color-tipo, var(--color-acento));
+}
+
+.etiqueta-tipo {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--color-tipo, var(--color-acento-oscuro));
+}
+
+.card-evento-titulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    line-height: 1.35;
+    margin-bottom: 0.85rem;
+}
+
+.card-evento-datos li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+    margin-bottom: 0.35rem;
+}
+
+.card-evento-datos svg {
+    flex-shrink: 0;
+    color: var(--color-acento-oscuro);
+}
+
+.card-evento-descripcion {
+    font-size: 0.875rem;
+    color: var(--color-gris-700);
+    margin: 0.5rem 0 1.25rem;
+}
+
+/* Badges de cupo */
+.badge-cupo {
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.4em 0.75em;
+    border-radius: var(--radio-pill);
+    white-space: nowrap;
+}
+
+.badge-cupo-ok      { background-color: var(--color-acento-suave); color: var(--color-acento-oscuro); }
+.badge-cupo-bajo    { background-color: #fff4e0; color: #b26a00; }
+.badge-cupo-agotado { background-color: #fdeaea; color: #c0392b; }
+
+/* Estado vacío */
+.estado-vacio {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--color-gris-500);
+    background-color: var(--color-blanco);
+    border: 2px dashed var(--color-gris-300);
+    border-radius: var(--radio-card);
+}
+
+.estado-vacio svg {
+    margin-bottom: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   8. Modal de inscripción
+   -------------------------------------------------------------------------- */
+.modal-eventosu {
+    border: none;
+    border-radius: var(--radio-card);
+    overflow: hidden;
+    box-shadow: var(--sombra-card-hover);
+}
+
+.modal-eventosu .modal-header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border-bottom: 3px solid var(--color-acento);
+}
+
+.modal-evento-nombre {
+    color: var(--color-acento-claro);
+}
+
+.modal-eventosu .modal-footer {
+    border-top-color: var(--color-gris-100);
+}
+
+/* Alertas globales flotantes */
+.contenedor-alertas {
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    left: 1rem;
+    z-index: 1090; /* por encima del modal (1055) */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    pointer-events: none;
+}
+
+.contenedor-alertas .alert {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 0;
+    border-radius: var(--radio);
+    pointer-events: auto;
+}
+
+/* --------------------------------------------------------------------------
+   9. Formularios en panel (eventos.html y contacto.html)
+   -------------------------------------------------------------------------- */
+.panel-formulario {
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-card);
+    box-shadow: var(--sombra-card);
+    border-top: 4px solid var(--color-acento);
+    padding: 1.5rem;
+}
+
+.panel-formulario-encabezado {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--color-gris-100);
+}
+
+.panel-formulario-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--color-acento-suave);
+    color: var(--color-acento-oscuro);
+}
+
+.panel-formulario-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 0.15rem;
+}
+
+.panel-formulario-subtitulo {
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+}
+
+.panel-formulario textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* --------------------------------------------------------------------------
+   10. Administración de asistentes (asistentes.html)
+   -------------------------------------------------------------------------- */
+.btn-exportar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: var(--sombra-md);
+}
+
+.btn-exportar:disabled {
+    box-shadow: none;
+}
+
+.resumen-evento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.resumen-item {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radio-pill);
+    background-color: var(--color-gris-100);
+    color: var(--color-gris-700);
+}
+
+.resumen-confirmados { background-color: #e6f6ee; color: #1e7a4c; }
+.resumen-pendientes  { background-color: #fff4e0; color: #b26a00; }
+
+.panel-tabla {
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-card);
+    box-shadow: var(--sombra-card);
+    overflow: hidden;
+}
+
+.tabla-asistentes thead th {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 3px solid var(--color-acento);
+    white-space: nowrap;
+    padding: 0.85rem 1rem;
+}
+
+.tabla-asistentes td {
+    padding: 0.75rem 1rem;
+}
+
+.tabla-asistentes .celda-nombre {
+    font-weight: 600;
+    color: var(--color-primario);
+}
+
+.tabla-asistentes .btn-accion {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.65rem;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   11. Contacto (contacto.html)
+   -------------------------------------------------------------------------- */
+.lista-contacto {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-gris-100);
+    font-size: 0.875rem;
+    color: var(--texto-suave);
+}
+
+.lista-contacto li {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.lista-contacto svg {
+    color: var(--color-acento-oscuro);
+    flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   12. Contenedor principal
+   -------------------------------------------------------------------------- */
+main.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: calc(100vh - 80px);
+}
+
+/* ==========================================================================
+   13. Media Queries 
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Navbar colapsado (< lg: 991.98px)
+   El colapso lo gestiona el componente nativo de Bootstrap
+   (.navbar-expand-lg + .navbar-toggler + .collapse); aquí solo se estiliza
+   el menú desplegado para que sea cómodo de usar con el dedo.
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    .navbar-eventosu .navbar-collapse {
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .navbar-eventosu .navbar-nav {
+        gap: 0.25rem;
+    }
+
+    .navbar-eventosu .nav-link {
+        padding: 0.7rem 1rem;   /* área táctil ≥ 44px */
+    }
+}
+
+/* --------------------------------------------------------------------------
+   xs + sm (< md: 767.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+    /* Tarjetas de eventos: siempre al 100% del ancho (equivalente a col-12) */
+    #contenedorEventos > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Paddings más compactos en contenedores */
+    .encabezado-pagina {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .encabezado-titulo {
+        font-size: 1.4rem;
+    }
+
+    .panel-filtros,
+    .panel-formulario {
+        padding: 1.25rem 1rem;
+    }
+
+    .card-evento .card-body {
+        padding: 1.15rem;
+    }
+
+    /* Tabla de asistentes: scroll horizontal dentro de .table-responsive
+       en lugar de comprimir columnas */
+    .panel-tabla .table-responsive {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tabla-asistentes {
+        min-width: 600px;
+    }
+
+    .tabla-asistentes thead th,
+    .tabla-asistentes td {
+        padding: 0.65rem 0.75rem;
+    }
+
+    /* Botones del pie de modales a ancho completo */
+    .modal-footer {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .modal-footer > .btn {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   xs (< sm: 575.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+    main.container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .navbar-eventosu .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .panel-formulario-encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .panel-formulario-titulo {
+        font-size: 1.3rem;
+    }
+
+    /* Alertas flotantes ocupan el ancho disponible */
+    .contenedor-alertas {
+        top: 4.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .contenedor-alertas .alert {
+        max-width: none;
+    }
+}
+
+/* sm: ≥ 576px */
+/* @media (min-width: 576px) { } */
+
+/* md: ≥ 768px */
+@media (min-width: 768px) {
+    .panel-formulario {
+        padding: 2rem;
+    }
+}
+
+/* lg: ≥ 992px */
+@media (min-width: 992px) {
+    .encabezado-pagina {
+        padding: 2.5rem 2rem;
+    }
+
+    .encabezado-titulo {
+        font-size: 2rem;
+    }
+
+    .panel-filtros {
+        padding: 1.5rem;
+    }
+}
+
+/* xl: ≥ 1200px */
+@media (min-width: 1200px) {
+    .card-evento .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* xxl: ≥ 1400px */
+/* @media (min-width: 1400px) { } */
+
+/* --------------------------------------------------------------------------
+   Accesibilidad y dispositivos táctiles
+   -------------------------------------------------------------------------- */
+
+/* Sin efecto "levantar" en pantallas táctiles (evita hover pegado) */
+@media (hover: none) {
+    .card-evento:hover {
+        transform: none;
+        box-shadow: var(--sombra-card);
+    }
+}
+
+/* Respeta la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}

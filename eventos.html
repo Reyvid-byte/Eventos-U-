@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Crear Evento | EventosU</title>
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR GLOBAL ===================== -->
+    <header class="header-principal">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-eventosu">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
+                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
+                    </svg>
+                    Eventos<span>U</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menÃº de navegaciÃ³n">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                                </svg>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="eventos.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                </svg>
+                                Crear Evento
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="asistentes.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                                </svg>
+                                Asistentes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =================== FIN NAVBAR GLOBAL =================== -->
+
+    <main class="container py-4 py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-6">
+
+                <section class="panel-formulario">
+                    <header class="panel-formulario-encabezado">
+                        <div class="panel-formulario-icono" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                                <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="panel-formulario-titulo">Crear evento</h1>
+                            <p class="panel-formulario-subtitulo mb-0">Completa los datos para publicar un nuevo evento en el catálogo.</p>
+                        </div>
+                    </header>
+
+                    <div id="alertaEvento" aria-live="polite"></div>
+
+                    <form id="formEvento" class="row g-3" novalidate>
+                        <!-- Título -->
+                        <div class="col-12">
+                            <label for="eventoTitulo" class="form-label">Título</label>
+                            <input type="text" id="eventoTitulo" class="form-control" placeholder="Ej. Congreso Nacional de Ingeniería" minlength="3" maxlength="120" required>
+                            <div class="invalid-feedback">El título debe tener al menos 3 caracteres.</div>
+                        </div>
+
+                        <!-- Tipo -->
+                        <div class="col-12 col-md-6">
+                            <label for="eventoTipo" class="form-label">Tipo</label>
+                            <select id="eventoTipo" class="form-select" required>
+                                <option value="" selected disabled>Selecciona un tipo</option>
+                                <option value="Conferencia">Conferencia</option>
+                                <option value="Taller">Taller</option>
+                                <option value="Curso">Curso</option>
+                                <option value="Congreso">Congreso</option>
+                            </select>
+                            <div class="invalid-feedback">Selecciona el tipo de evento.</div>
+                        </div>
+
+                        <!-- Cupo máximo -->
+                        <div class="col-12 col-md-6">
+                            <label for="eventoCupo" class="form-label">Cupo máximo</label>
+                            <input type="number" id="eventoCupo" class="form-control" placeholder="Ej. 50" min="1" max="10000" step="1" required>
+                            <div class="invalid-feedback">Ingresa un número entero mayor a 0.</div>
+                        </div>
+
+                        <!-- Fecha -->
+                        <div class="col-12 col-md-6">
+                            <label for="eventoFecha" class="form-label">Fecha</label>
+                            <input type="date" id="eventoFecha" class="form-control" required>
+                            <div class="invalid-feedback" id="feedbackFecha">Selecciona una fecha.</div>
+                        </div>
+
+                        <!-- Hora -->
+                        <div class="col-12 col-md-6">
+                            <label for="eventoHora" class="form-label">Hora</label>
+                            <input type="time" id="eventoHora" class="form-control" required>
+                            <div class="invalid-feedback">Selecciona una hora.</div>
+                        </div>
+
+                        <!-- Sede -->
+                        <div class="col-12">
+                            <label for="eventoSede" class="form-label">Sede</label>
+                            <input type="text" id="eventoSede" class="form-control" placeholder="Ej. Auditorio Principal" maxlength="100" required>
+                            <div class="invalid-feedback">Indica la sede del evento.</div>
+                        </div>
+
+                        <!-- Descripción -->
+                        <div class="col-12">
+                            <label for="eventoDescripcion" class="form-label">Descripción</label>
+                            <textarea id="eventoDescripcion" class="form-control" rows="4" placeholder="Describe brevemente el objetivo y contenido del evento..." maxlength="500" required></textarea>
+                            <div class="invalid-feedback">Agrega una descripción.</div>
+                            <div class="text-end">
+                                <small id="contadorDescripcion" class="text-muted">0/500</small>
+                            </div>
+                        </div>
+
+                        <!-- Acciones -->
+                        <div class="col-12 d-flex flex-column flex-sm-row justify-content-end gap-2 pt-2">
+                            <button type="reset" class="btn btn-contorno">Limpiar</button>
+                            <button type="submit" class="btn btn-acento">Publicar evento</button>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/utilidades.js"></script>
+    <script src="js/eventos.js"></script>
+</body>
+
+</html>

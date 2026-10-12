@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Contacto | EventosU</title>
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR GLOBAL ===================== -->
+    <header class="header-principal">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-eventosu">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"/>
+                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"/>
+                    </svg>
+                    Eventos<span>U</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                                </svg>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eventos.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                </svg>
+                                Crear Evento
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="asistentes.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                                </svg>
+                                Asistentes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =================== FIN NAVBAR GLOBAL =================== -->
+
+    <main class="container py-4 py-lg-5">
+
+        <!-- ===================== ENCABEZADO ===================== -->
+        <section class="encabezado-pagina mb-4">
+            <h1 class="encabezado-titulo">Contacto y Atención</h1>
+            <p class="encabezado-subtitulo mb-0">¿Tienes dudas sobre eventos, inscripciones o deseas colaborar como ponente? Estamos para ayudarte.</p>
+        </section>
+
+        <div class="row g-4">
+
+            <!-- ===================== INFORMACIÓN INSTITUCIONAL ===================== -->
+            <div class="col-12 col-lg-5">
+                <div class="d-flex flex-column gap-3">
+                    
+                    <!-- Ubicación -->
+                    <div class="panel-filtros p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="text-primary mt-1" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="h6 fw-bold mb-1">Campus Universitario</h2>
+                                <p class="text-muted small mb-0">Buap, Ciudad Universitaria 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Canales de Comunicación -->
+                    <div class="panel-filtros p-4">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="text-primary mt-1" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l1.326-.795 5.64 3.47A1 1 0 0 1 14 13h-3a.5.5 0 0 0 0 1h3a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2Zm1 2h10a1 1 0 0 1 .966.741l-5.64 3.471L8 7.417 2.034 4.74A1 1 0 0 1 3 4Z"/>
+                                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.01-.14 1.25-.258l-.178-.716c-.206.096-.54.19-.94.19-1.396 0-2.31-.91-2.31-2.528v-.195c0-1.597.98-2.61 2.37-2.61h.034c1.47 0 2.22 1.05 2.22 2.502v.266c0 .874-.35 1.246-.867 1.246-.445 0-.712-.315-.712-.792V11.5h-.938v.678h-.028c-.24-.45-.73-.78-1.35-.78-1.07 0-1.87.89-1.87 2.14v.135c0 1.24.8 2.14 1.87 2.14.64 0 1.13-.34 1.37-.8h.028v.536c0 .99.63 1.54 1.63 1.54Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="h6 fw-bold mb-1">Correo Electrónico</h2>
+                                <p class="text-muted small mb-0">eventos@universidad.edu</p>
+                                <p class="text-muted small mb-0">soporte@eventosu.edu</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="text-primary mt-1" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="h6 fw-bold mb-1">Teléfono</h2>
+                                <p class="text-muted small mb-0">+52 (55) 5555-0100</p>
+                                <p class="text-muted small mb-0">Ext. 3020 / 3021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horario de Atención -->
+                    <div class="panel-filtros p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="text-primary mt-1" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="h6 fw-bold mb-1">Horario de Atención</h2>
+                                <p class="text-muted small mb-0">Lunes a Viernes: 8:00 AM – 6:00 PM</p>
+                                <p class="text-muted small mb-0">Sábados: 9:00 AM – 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ===================== PANEL FORMULARIO DE CONTACTO ===================== -->
+            <div class="col-12 col-lg-7">
+                <section class="panel-formulario">
+                    <header class="panel-formulario-encabezado">
+                        <div class="panel-formulario-icono" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="panel-formulario-titulo">Envíanos un mensaje</h2>
+                            <p class="panel-formulario-subtitulo mb-0">Completa los campos a continuación y te responderemos en breve.</p>
+                        </div>
+                    </header>
+
+                    <div id="alertaContacto" aria-live="polite"></div>
+
+                    <form id="formContacto" class="row g-3" novalidate>
+                        <!-- Nombre Completo -->
+                        <div class="col-12 col-md-6">
+                            <label for="contactoNombre" class="form-label">Nombre completo</label>
+                            <input type="text" id="contactoNombre" class="form-control" placeholder="Ej. Carlos Hernández" minlength="3" maxlength="100" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu nombre (mínimo 3 caracteres).</div>
+                        </div>
+
+                        <!-- Correo Electrónico -->
+                        <div class="col-12 col-md-6">
+                            <label for="contactoEmail" class="form-label">Correo electrónico</label>
+                            <input type="email" id="contactoEmail" name="email" class="form-control"
+                                placeholder="correo@universidad.edu" autocomplete="email" required>
+                            <div class="invalid-feedback">Ingresa un correo institucional o personal válido.</div>
+                        </div>
+
+                        <!-- Asunto / Tipo de Consulta -->
+                        <div class="col-12 col-md-6">
+                            <label for="contactoAsunto" class="form-label">Motivo de contacto</label>
+                            <select id="contactoAsunto" class="form-select" required>
+                                <option value="" selected disabled>Selecciona un motivo</option>
+                                <option value="Información general">Información general sobre eventos</option>
+                                <option value="Problema con inscripción">Problema con una inscripción</option>
+                                <option value="Propuesta de evento">Propuesta de nuevo evento o taller</option>
+                                <option value="Soporte técnico">Soporte técnico de la plataforma</option>
+                                <option value="Otro">Otro asunto</option>
+                            </select>
+                            <div class="invalid-feedback">Selecciona el motivo de tu consulta.</div>
+                        </div>
+
+                        <!-- Teléfono Opcional -->
+                        <div class="col-12 col-md-6">
+                            <label for="contactoTelefono" class="form-label">Teléfono (opcional)</label>
+                            <input type="tel" id="contactoTelefono" class="form-control" placeholder="10 dígitos" pattern="[0-9]{10}" maxlength="10">
+                            <div class="invalid-feedback">Si agregas teléfono, debe tener 10 dígitos numéricos.</div>
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div class="col-12">
+                            <label for="contactoMensaje" class="form-label">Mensaje</label>
+                            <textarea id="contactoMensaje" class="form-control" rows="5" placeholder="Escribe aquí tu consulta con el mayor detalle posible..." maxlength="500" required></textarea>
+                            <div class="invalid-feedback">Por favor, escribe el contenido de tu mensaje.</div>
+                            <div class="text-end">
+                                <small id="contadorMensaje" class="text-muted">0/500</small>
+                            </div>
+                        </div>
+
+                        <!-- Acciones -->
+                        <div class="col-12 d-flex flex-column flex-sm-row justify-content-end gap-2 pt-2">
+                            <button type="reset" id="btnLimpiarContacto" class="btn btn-contorno">Limpiar</button>
+                            <button type="submit" class="btn btn-acento">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill me-1" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.138L2.348 7.37 14.13 2.576Zm-.678.369-5.77 5.77-.828 2.07 2.07-.828 5.77-5.77-.001.002-.001.002-.24-.244Z"/>
+                                </svg>
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/utilidades.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>
